@@ -1,0 +1,47 @@
+.box-wrapper {
+  overflow: hidden;
+}
+.box-over {
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 40px;
+}
+.box-over-in {
+  top: 0;
+  left: 0;
+}
+.box-over-in--left {
+  top: 0;
+  left: -100%;
+}
+.box-over-in--right {
+  top: 0;
+  left: 100%;
+}
+.box-over-in--top {
+  top: -100%;
+  left: 0;
+}
+.box-over-in--bottom {
+  top: 100%;
+  left: 0;
+}
+.box-over-out--left {
+  top: 0;
+  left: -100%;
+}
+.box-over-out--right {
+  top: 0;
+  left: 100%;
+}
+.box-over-out--top {
+  top: -100%;
+  left: 0;
+}
+.box-over-out--bottom {
+  top: 100%;
+  left: 0;
+}
