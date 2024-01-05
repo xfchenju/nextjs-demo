@@ -1,0 +1,59 @@
+.box-wrap {
+  position: relative;
+  background: #fff;
+  /* opacity: 0; */
+}
+.box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* background: gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .box-container {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* z-index: 9; */
+}
+
+.box .box-container img {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100vh;
+  /* height: 100%; */
+}
+
+.box0 .box-container {
+  /* background: red; */
+  /* opacity: 0; */
+}
+.box1 .box-container {
+  /* background: blue; */
+  /* opacity: 1; */
+}
+.box2 .box-container {
+  background: green;
+}
+
+.box0 {
+  /* z-index: 12; */
+}
+
+.box1 {
+  background: lightcyan;
+  /* z-index: 11; */
+}
+
+.box2 {
+  background: lightgray;
+  /* z-index: 10; */
+}
+
+

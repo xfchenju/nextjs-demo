@@ -1,0 +1,40 @@
+.vivo-container {
+  width: 100%;
+  min-height: 100vh;
+  /* position: relative; */
+}
+
+.vi-img-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.vi-mask {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.mask-orange {
+  height: 100%;
+}
+
+.vi-box {
+  position: absolute;
+  bottom: 0;
+  height: 100vh;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+}
+
+.vi-img {
+  margin: 0; /* 去除默认 margin */
+  background-size: 461px 605px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 461px;
+  height: 605px;
+}

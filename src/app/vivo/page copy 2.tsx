@@ -10,75 +10,30 @@ export default function Vivo() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline()
-
-    gsap.to('.vi-img-container', {
-      // background: 'rgba(23, 43, 22, 0.3)',
+    gsap.to('.img-container', {
+      opacity: 1,
       scrollTrigger: {
-        trigger: '.vi-img-container',
+        trigger: '.img-container',
         start: 'top top',
         end: '240%',
         scrub: true,
         pin: true,
         markers: true,
-        id: 'container'
       }
     })
 
 
-    gsap.to('.mask-blue', {
+     gsap.to(".img-box.img-box2", {
       height: '100%',
       scrollTrigger: {
-        trigger: '.mask-blue',
+        trigger: ".img-box2",
+        start: "bottom bottom",
+        end: "bottom top",
+        markers: true,
         scrub: true,
-      }
+        // pin: true
+      },
     })
-
-    gsap.to('.mask-black', {
-      height: '100%',
-      scrollTrigger: {
-        trigger: ".mask-blue",
-          start: "top top",
-          end: "+1200",
-          scrub: true,
-      }
-    })
-
-
-    // ScrollTrigger.create({
-    //   trigger: '.img-container',
-    //   start: 'bottom bottom-=10px',
-    //   end: 'bottom top',
-    //   // scrub: 0.5,
-    //   pin: true,
-    //   markers: true,
-    // })
-
-    // gsap.to('.img-container', {
-    //   // opacity: 1,
-    //   // rotate: 360,
-    //   // scale: 0.5,
-    //   scrollTrigger: {
-    //     trigger: '.img-container',
-    //     start: 'bottom bottom-=100px',
-    //     end: 'bottom top',
-    //     scrub: true,
-    //     pin: true,
-    //     markers: true,
-    //   }
-    // })
-
-
-    //  gsap.to(".img-box.img-box2", {
-    //   height: '100%',
-    //   scrollTrigger: {
-    //     trigger: ".img-box2",
-    //     start: "bottom bottom",
-    //     end: "bottom top",
-    //     markers: true,
-    //     scrub: true,
-    //     // pin: true
-    //   },
-    // })
 
     // gsap.to(".img-box.img-box3", {
     //   height: '100%',
@@ -164,65 +119,25 @@ export default function Vivo() {
 
   return (
     <div className="w-full vivo-container">
-      <div className="vi-img-container">
-        <div className="vi-mask mask-orange">
-          <div className="vi-box">
-            <Image className="vi-img vi-f1 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img1-md-x2.png" alt="" />
-          </div>
-        </div>
-        <div className="vi-mask mask-blue" style={{height: 0}}>
-          <div className="vi-box">
-            <Image className="vi-img vi-f2 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img2-md-x2.png" alt="" />
-          </div>
-        </div>
-        <div className="vi-mask mask-black" style={{height: 0}}>
-          <div className="vi-box">
-            <Image className="vi-img vi-f3 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img3-md-x2.png" alt="" />
-          </div>
-        </div>
-      </div>
-     
-
-
-      {/* <div className="container">
-        <div className="img-container">
-          <div className="img-wrap img-box1">
+      {/* <section className="banner"></section> */}
+      <div className="img-container">
+        <div className="img-box img-box1">
+          <div className="img-wrap">
             <Image className="img img1 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img1-md-x2.png" alt="" />
           </div>
         </div>
-        <div className="img-container">
-          <div className="img-wrap img-box2">
+        <div className="img-box img-box2">
+          <div className="img-wrap">
             <Image className="img img2 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img2-md-x2.png" alt="" />
-          </div>
+          </div>       
         </div>
-        <div className="img-container">
-          <div className="img-wrap img-box3">
+        <div className="img-box img-box3">
+          <div className="img-wrap">
             <Image className="img img3 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img3-md-x2.png" alt="" />
-          </div>
+          </div>       
         </div>
-      </div> */}
-      {/* <div className="img-container"> */}
-        {/* <div className="img-wrapper">
-          <div className="img-box img-box1">
-            <div className="img-wrap">
-              <Image className="img img1 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img1-md-x2.png" alt="" />
-            </div>
-          </div>
-          <div className="img-box img-box2">
-            <div className="img-wrap">
-              <Image className="img img2 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img2-md-x2.png" alt="" />
-            </div>
-          </div>
-          <div className="img-box img-box3">
-            <div className="img-wrap">
-              <Image className="img img3 block object-contain" width="922" height="1210" src="/images/iqooneo7-color-img3-md-x2.png" alt="" />
-            </div>
-          </div>
-        </div> */}
-      {/* </div> */}
-      {/* <section className="banner"></section> */}
-      {/* <section className="banner"></section> */}
-      {/* <section className="banner"></section> */}
+      </div>
+      
 
 
       {/* <div className="box box0">
